@@ -1,4 +1,3 @@
-
 import React, {useState} from "react";
 import n from "./header.module.css"
 import Menu from "./BurgerMenu/Menu";
@@ -36,7 +35,6 @@ const Header = () => {
     return(
       <header className={n.mainTitle}>
           <div className={n.container}>
-
               <div className={n.menuTop}>
                   <nav>
                       <div className={n.burgerBtn} onClick={() => setMenuActive(!menuActive)}>

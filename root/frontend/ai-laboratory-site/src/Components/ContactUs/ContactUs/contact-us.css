@@ -1,4 +1,4 @@
-body {
+/*body {
     margin: 0;
     padding: 0;
 }
@@ -13,9 +13,9 @@ a {
     text-decoration: none;
 }
 
-/*header {
+header {
     margin-bottom: 100px;
-}*/
+}
 
 .containerTop {
     width: 100%;
@@ -23,7 +23,7 @@ a {
 }
 
 .navbar-dark .navbar-toggler-icon {
-    /*background-image: url("/img/filter.svg");*/
+    !*background-image: url("/img/filter.svg");*!
 }
 
 .nav {
@@ -59,7 +59,7 @@ p {
     margin: auto;
     text-align: center;
 
-    /*border: 1px solid black;*/
+    !*border: 1px solid black;*!
 }
 
 input {
@@ -118,4 +118,4 @@ textarea {
     margin-top: 23px;
     margin-bottom: 23px;
     background: #4A83B8;
-}
+}*/

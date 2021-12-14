@@ -14,28 +14,32 @@ const Registration = () => {
         </header>
         <main className={n.formSignin}>
             <form>
-                <img className={n.logoMenu} src={iisLogo}/>
-                    <h2 className={n.title}>Регистрация</h2>
-                    <div className={n.formFloating}>
-                        <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
-                            {/*<label htmlFor="floatingInput">Почта...</label>*/}
-                    </div>
-                    <div className={n.formFloating}>
-                        <input type="password" className="form-control" id="floatingPassword" placeholder="Пароль"/>
-                            {/*<label htmlFor={n.floatingPassword}>Пароль...</label>*/}
-                    </div>
-                    <div className={n.formFloating}>
-                        <input type="text" className="form-control" id="floatingName" placeholder="ФИО"/>
-                            {/*<label htmlFor="floatingName"></label>*/}
-                    </div>
-                    <div className={n.formCheck}>
-                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                            <label className={n.formCheckLabel} htmlFor="flexCheckDefault">
-                                Я сейчас учусь
-                            </label>
-                    </div>
-                    <button className={n.btnn} type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
-                <Link to="/login" className={n.linkReg}>Войти</Link>
+                <img className={n.logoMenu} src={iisLogo} alt="iis-logo"/>
+                <h2 className={n.title}>Регистрация</h2>
+                <div className={n.formFloating}>
+                    <input type="email" className={n.formControl} id="floatingInput" placeholder="Почта..."/>
+                    <label htmlFor="floatingInput"></label>
+                </div>
+                <div className={n.formFloating}>
+                    <input type="password" className={n.formControl} id="floatingPassword" placeholder="Пароль..."/>
+                    <label htmlFor="floatingPassword"></label>
+                </div>
+                <div className={n.formFloating}>
+                    <input type="text" className={n.formControl} id="floatingName"
+                           placeholder="Иванов Иван Иванович..."/>
+                    <label htmlFor="floatingName"></label>
+                </div>
+                <div className={n.formCheck}>
+                    <input className="form-check-inline" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label className={n.formCheckLabel} htmlFor="flexCheckDefault">
+                        Я сейчас учусь
+                    </label>
+                </div>
+                <Link to="/profile">
+                    <button className={n.btn} type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </Link>
+                <br/>
+                <a className={n.link} href="/login">Войти</a>
             </form>
         </main>
         </body>

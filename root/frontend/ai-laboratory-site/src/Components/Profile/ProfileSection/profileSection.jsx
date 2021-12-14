@@ -1,5 +1,6 @@
 import React from "react";
 import n from "./profileSection.module.css";
+import ProjectComponent from "../../ProjectComponent/projectComponent";
 
 const ProfileSection = () => {
   return(
@@ -17,19 +18,21 @@ const ProfileSection = () => {
               </div>
               <h2 className={n.listFullProjects}>ПРОЕКТЫ</h2>
               <div className={n.projectsPanel}>
-                  <div className={n.project}>
-                      <h3>Разработка динамической карты погоды на 3D-модели Земли</h3>
-                      <p className={n.description}>В данном проекте нужно связать нашу БД с заготовленной 3D-моделю Земли,
-                          чтобы отображать на ней облачность, температуру и осадки.</p>
-                      <div className={n.footerTitle}>
-                          <div className={n.skills}>
-                              <span className={n.PostreSQL}>PostreSQL</span>
-                              <span className={n.Python}>Python</span>
-                              <span className={n.AutodeskMaya2020}>Autodesk Maya 2020</span>
-                          </div>
-                          <div className={n.manCount}>4 / 5</div>
-                      </div>
-                  </div>
+                  <ProjectComponent
+                      name = "Разработка динамической карты погоды на 3D-модели Земли"
+                      description = "В данном проекте нужно связать нашу БД с заготовленной 3D-моделю Земли,
+            чтобы отображать на ней облачность, температуру и осадки"
+                      postgreSQLStyle = {n.PostreSQL}
+                      postgreSQL = {1}
+                      pythonStyle = {n.Python}
+                      python ={true}
+                      autodeskMaya2020Style = {n.AutodeskMaya2020}
+                      autodeskMaya2020 = "AutodeskMaya2020"
+                      manCount = "4 / 5"
+                      //Передача информации в компоненту
+                      //Style - передаём название css класса, для отображения кнопки
+                      content = "1ddd"
+                  />
               </div>
           </div>
       </section>

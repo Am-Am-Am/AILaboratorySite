@@ -12,8 +12,6 @@ let d = "тест";
 
 
 
-
-
 const Information = () => {
   return(
       <div className={n.color}>

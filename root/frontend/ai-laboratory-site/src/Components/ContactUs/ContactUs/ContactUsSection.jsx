@@ -1,9 +1,9 @@
 import React from "react";
-import "./contact-us.css";
+import n from "./ContactUsSection.module.css";
 
 const ContactUsSection = () => {
   return(
-      <main className="formSignin">
+      <main className={"formSignin"}>
           <form>
               <div className="formFloating">
                   <input className="formControl" type="text" id="floatingName" placeholder="Ваше имя..."/>
